@@ -1,9 +1,10 @@
 import {combineReducers} from 'redux';
-import todosReducer from './todosReducer';
+import movieReducer from "./movielist"
 
 
 export default combineReducers({
-    todosReducer
+   movieReducer
 });
+
 
 
