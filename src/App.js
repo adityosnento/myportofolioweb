@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css'
 import Search from './components/Kelas/Search'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   
@@ -12,7 +13,7 @@ const App = () => {
          <Route path="/">
             <div className="display">
             <Header/>
-          
+            <Footer/>
             </div>
          </Route>
        </Router>
