@@ -3,7 +3,7 @@ const baseURL = "https://jsonplaceholder.typicode.com";
 
 export const getMovies = () => async dispatch => {
     try {
-        const res = await fetch (`${baseURL}/todos`);
+        const res = await fetch (`${baseURL}/todos?_limit=10`);
         const data = await res.json();
         dispatch({
             type: GET,
@@ -25,7 +25,7 @@ export const addMovie = post => async dispatch => {
             title: post
         }
 
-        const res = await fetch (`${baseURL}/todos/1`, {
+        const res = await fetch (`${baseURL}/todos`, {
             method: POST,
             headers: {
                 "Content-Type" : "application/json"
