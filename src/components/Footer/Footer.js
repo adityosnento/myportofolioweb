@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import '../Footer/Footer.scss';
 
-const Header = () => {
+const Footer = () => {
     return (
         <div className="container">
             <div className="footer-logo">
@@ -52,4 +52,4 @@ const Header = () => {
     )
 }
 
-export default connect()(Header);
+export default connect()(Footer);
