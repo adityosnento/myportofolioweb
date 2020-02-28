@@ -6,7 +6,7 @@ const CardMovie = () => {
     return (
         <div className="body-container">
             <div className="card-container">
-                <img 
+                <img
                     src={require('../../assets/1.webp')} 
                     alt="logo"
                     className=""/>
@@ -15,7 +15,7 @@ const CardMovie = () => {
             </div>
             <div className="card-container">
                 <img 
-                    src={require('../../assets/Avengers-Heroes.jpg')} 
+                    src={require('../../assets/2.webp')} 
                     alt="logo"
                     className=""/>
                 <h3>Doraemon</h3>
@@ -23,7 +23,7 @@ const CardMovie = () => {
             </div>
             <div className="card-container">
                 <img 
-                    src={require('../../assets/Avengers-Heroes.jpg')} 
+                    src={require('../../assets/3.webp')} 
                     alt="logo"
                     className=""/>
                 <h3>Doraemon</h3>
@@ -31,7 +31,7 @@ const CardMovie = () => {
             </div>
             <div className="card-container">
                 <img 
-                    src={require('../../assets/Avengers-Heroes.jpg')} 
+                    src={require('../../assets/4.webp')} 
                     alt="logo"
                     className=""/>
                 <h3>Doraemon</h3>
@@ -39,7 +39,7 @@ const CardMovie = () => {
             </div>
             <div className="card-container">
                 <img 
-                    src={require('../../assets/Avengers-Heroes.jpg')} 
+                    src={require('../../assets/5.webp')} 
                     alt="logo"
                     className=""/>
                 <h3>Doraemon</h3>
@@ -47,7 +47,55 @@ const CardMovie = () => {
             </div>
             <div className="card-container">
                 <img 
-                    src={require('../../assets/Avengers-Heroes.jpg')} 
+                    src={require('../../assets/6.webp')} 
+                    alt="logo"
+                    className=""/>
+                <h3>Doraemon</h3>
+                <p>Kartun</p>
+            </div>
+            <div className="card-container">
+                <img 
+                    src={require('../../assets/6.webp')} 
+                    alt="logo"
+                    className=""/>
+                <h3>Doraemon</h3>
+                <p>Kartun</p>
+            </div>
+            <div className="card-container">
+                <img 
+                    src={require('../../assets/5.webp')} 
+                    alt="logo"
+                    className=""/>
+                <h3>Doraemon</h3>
+                <p>Kartun</p>
+            </div>
+            <div className="card-container">
+                <img 
+                    src={require('../../assets/4.webp')} 
+                    alt="logo"
+                    className=""/>
+                <h3>Doraemon</h3>
+                <p>Kartun</p>
+            </div>
+            <div className="card-container">
+                <img 
+                    src={require('../../assets/3.webp')} 
+                    alt="logo"
+                    className=""/>
+                <h3>Doraemon</h3>
+                <p>Kartun</p>
+            </div>
+            <div className="card-container">
+                <img 
+                    src={require('../../assets/2.webp')} 
+                    alt="logo"
+                    className=""/>
+                <h3>Doraemon</h3>
+                <p>Kartun</p>
+            </div>
+            <div className="card-container">
+                <img 
+                    src={require('../../assets/1.webp')} 
                     alt="logo"
                     className=""/>
                 <h3>Doraemon</h3>

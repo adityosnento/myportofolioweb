@@ -1,0 +1,49 @@
+.review-container {
+    box-sizing: border-box;
+    width: 70%;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #d7d7d7;
+    padding-left: 40px;
+
+    .menu {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: baseline;
+    
+        .auto {
+            display: inline-block;
+            margin-right: 50px;
+            font-weight: 600;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            line-height: 1.4em;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                display: inline-block;
+                margin-right: 24px;
+                padding-bottom: 5px;
+                font-size: 1.1em;
+                line-height: 1em;
+                box-sizing: border-box;
+                border-color: #1e272c;
+             
+                &:active {
+                    border-color: #1e272c;
+                    border-bottom: 4px solid #00d573;
+                }
+            }
+
+
+        }
+    }
+}

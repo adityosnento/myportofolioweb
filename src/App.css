@@ -1,3 +1,10 @@
 .display {
-  
+  background-color:#ffff;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+
+h1 {
+    margin-left: 30px;
+    color: red;
 }

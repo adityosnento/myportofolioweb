@@ -7,6 +7,9 @@ import Footer from './components/Footer/Footer'
 import Mainpage from './components/MainPage/Mainpage';
 import Slider from './components/Slider/Slider'
 import CardMovie from './components/Card-Movie/Cardmovie'
+import Review from './components/Review/Review'
+import Moviedesc from './components/Moviedesc/Moviedesc'
+
 
 const App = () => {
   
@@ -15,14 +18,17 @@ const App = () => {
          <Route path="/">
             <div className="display">
             <Header/>
-            <Slider/>
-            <div>
-            <Mainpage/>
-            <CardMovie/>
-            <CardMovie/>
-            <CardMovie/>
-            </div>
-            <Footer/>
+            <Moviedesc/>
+            <Review/>
+            {/* <Slider/>
+              <div>
+                <Mainpage/>
+                <div className="column-1">
+                  <h1>List Movie:</h1>
+                <CardMovie/>
+              </div>
+            </div> */}
+            {/* <Footer/> */}
             </div>
          </Route>
        </Router>

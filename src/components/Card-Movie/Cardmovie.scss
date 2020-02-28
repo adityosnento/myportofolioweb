@@ -1,15 +1,21 @@
 .body-container {
-    padding: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 0;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
     color: white;
+    flex-wrap: wrap;
+    margin-top: 10px;
     
     .card-container {
         width: 15%;
         background-color: black;
         box-sizing: border-box;
         border-radius: 10px;
+        margin-top: 40px;
     
         img {
             width: 100%;
