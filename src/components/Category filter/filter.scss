@@ -1,0 +1,43 @@
+.category {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    margin-top: 60px;
+
+    h2 {
+    font-weight: bold;
+    border-left: 3px solid;
+    padding-left: 10px;
+    }
+    ol {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        width: 50%;
+        padding-left: 0px;
+        margin-left: 0px;
+
+        
+        li {
+            padding: 10px;
+        }
+        
+        
+        li:hover {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        li:active {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

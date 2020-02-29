@@ -5,13 +5,28 @@ import '../Slider/Slider.scss'
 
 
 class SimpleSlider extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.play = this.play.bind(this);
+    this.pause = this.pause.bind(this);
+  }
+  play() {
+    this.slider.slickPlay();
+  }
+  pause() {
+    this.slider.slickPause();
+  }
+  
   render() {
     const settings = {
-      dots: true,
-      infinite: true,
+      dots: false,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      arrows: false,
+      slidesToScroll: 1,
+      autoplay: true
     };
     return (
       <div className="container-photo">
@@ -23,10 +38,16 @@ class SimpleSlider extends Component {
                 className="slide-photo"/>
           </div>
           <div>
-            <h3>2</h3>
+                <img
+                src={require('../../assets/lion-king.jpg')} 
+                alt="logo"
+                className="slide-photo"/>
           </div>
           <div>
-            <h3>3</h3>
+                <img
+                src={require('../../assets/how-totrain.jpg')} 
+                alt="logo"
+                className="slide-photo"/>
           </div>
         </Slider>
       </div>

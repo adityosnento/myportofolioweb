@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import Mainpage from './components/MainPage/Mainpage';
 import Slider from './components/Slider/Slider'
 import CardMovie from './components/Card-Movie/Cardmovie'
+import Filter from './components/Category filter/filter';
 import Review from './components/Review/Review'
 import Moviedesc from './components/Moviedesc/Moviedesc'
 
@@ -23,12 +24,10 @@ const App = () => {
             {/* <Slider/>
               <div>
                 <Mainpage/>
-                <div className="column-1">
-                  <h1>List Movie:</h1>
+                <Filter/>
                 <CardMovie/>
-              </div>
-            </div> */}
-            {/* <Footer/> */}
+            </div>  */}
+            <Footer/>
             </div>
          </Route>
        </Router>
