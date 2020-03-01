@@ -33,19 +33,19 @@ class SimpleSlider extends Component {
         <Slider {...settings}>
           <div>
                 <img
-                src={require('../../assets/Avengers-Heroes.jpg')} 
+                src={require('../../../assets/Avengers-Heroes.jpg')} 
                 alt="logo"
                 className="slide-photo"/>
           </div>
           <div>
                 <img
-                src={require('../../assets/lion-king.jpg')} 
+                src={require('../../../assets/lion-king.jpg')} 
                 alt="logo"
                 className="slide-photo"/>
           </div>
           <div>
                 <img
-                src={require('../../assets/how-totrain.jpg')} 
+                src={require('../../../assets/how-totrain.jpg')} 
                 alt="logo"
                 className="slide-photo"/>
           </div>

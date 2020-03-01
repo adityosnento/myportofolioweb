@@ -19,8 +19,23 @@ const Header = () => {
             </div>
             <div className="container-navbar"> 
                 <ul>
-                    <li>Homepage</li>
-                    <li>Sign in</li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Sign in 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content">
+                                <a href="#">Adityo S. Nento</a>
+                                <a href="#">Profile</a>
+                                <a href="#">avatar</a>
+                                <a href="#">Sign Out</a>
+                            </div>
+                    </div>
+                    <li>
+                    <img 
+                        src={require('../../assets/netflix.png')} 
+                        alt="logo"
+                        className="header__logo"/>
+                    </li> 
                 </ul>
             </div>
         </div>

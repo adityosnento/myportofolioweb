@@ -1,0 +1,18 @@
+.Mainphoto {
+    width: 100%;
+    background-image: 
+    linear-gradient(to top, rgba(0 , 0,  0, 50), rgba(255, 255, 255, 0)),
+        url('../../../assets/how-totrain.jpg');
+    object-fit: cover;
+    height: 80vh;
+
+    .container-desc {
+        background-color: black;
+        padding-top: 300px;
+        width: 30%;
+        margin-left: 50px;
+        color: white;
+    }
+   
+    
+}

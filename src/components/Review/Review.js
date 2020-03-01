@@ -6,7 +6,7 @@ const Review = () => {
     return (
         <div className="review-container">
            <div className="menu">
-               <h3 className="auto">Social</h3>
+               <h3 className="auto" id="Social">Social</h3>
                <ul>
                    <li>Review</li>
                    <li>Discussion</li>
