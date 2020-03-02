@@ -119,9 +119,7 @@
 	width: 100%;
 	
 	ul{
-		display: flex;
-		justify-content: flex-end;
-		margin-right: 48px;
+		
 		
 		li {
 			padding: 30px;
@@ -137,6 +135,22 @@
 				display: flex;
 				align-items: center;
 			}
+
+			.dropbtn {
+				font-size: 16px;  
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+				padding: 15px;
+
+				&:hover {
+					background-color :red;
+				}
+			  }
 		}
 
 		.dropdown-content {
@@ -171,22 +185,13 @@
 		  .dropdown {
 			float: left;
 			overflow: hidden;
+			padding-left: 200px;
 			
-			.dropbtn {
-				font-size: 16px;  
-				border: none;
-				outline: none;
-				color: white;
-				padding: 14px 16px;
-				background-color: inherit;
-				font-family: inherit;
-				margin: 0;
-				padding: 30px;
-
-				&:hover {
-					background-color :red;
-				}
-			  }
+			img {
+				border-radius: 50%;
+				width: 12%;
+				text-align:right;
+			}
 		
 		}
 		  

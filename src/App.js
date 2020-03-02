@@ -4,19 +4,19 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Mainpage from './components/MainPage/Mainpage';
-import Slider from './components/Mainphoto/Slider/Slider'
-import CardMovie from './components/Card-Movie/Cardmovie'
-import Filter from './components/Category filter/filter';
+// import Mainpage from './components/MainPage/Mainpage';
+// import Slider from './components/Mainphoto/Slider/Slider'
+// import CardMovie from './components/Card-Movie/Cardmovie'
+// import Filter from './components/Category filter/filter';
 import Review from './components/Review/Review'
 import Moviedesc from './components/Moviedesc/Moviedesc'
 import Overview from './components/Overview/Overview'
 import FilterDetail from './components/Categorydetail/filterdetail';
 import Mainphoto from './components/Mainphoto/Mainphoto/Mainphoto'
-import Register from './components/Auth/register/register'
-import Login from './components/Auth/login/login'
-import Uploadphoto from './components/Auth/UploadPhoto/Uploadphoto'
-import UpdateProfile from './components/Auth/updateProfile/Updateprofile'
+// import Register from './components/Auth/register/register'
+// import Login from './components/Auth/login/login'
+// import Uploadphoto from './components/Auth/UploadPhoto/Uploadphoto'
+// import UpdateProfile from './components/Auth/updateProfile/Updateprofile'
 
 
 // FontAwesome
