@@ -12,7 +12,7 @@ const CardMovie = ({getMovies, movies}) => {
    console.log('res', movies)
     
     const lists = movies.map(item => 
-    <Link to="/main/" key={item.movie_detail._id} className="card-container">
+    <Link to="/main" key={item.movie_detail._id} className="card-container">
         <img
             src={item.movie_detail[0].poster} 
             alt="movie_picture"
