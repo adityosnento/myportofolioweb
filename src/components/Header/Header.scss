@@ -13,6 +13,7 @@
 	background-color: black;
 	font-weight: lighter;
 	color: white;
+	position:fixed;
 
     @media screen and (max-width: 800px) {
         flex-direction: column;
@@ -40,7 +41,6 @@
 
 .container-search {
 	width: 100%;
-
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -119,19 +119,22 @@
 	width: 100%;
 	
 	ul{
-		
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 100px;
+		margin-left: 30px;
 		
 		li {
-			padding: 30px;
 			text-decoration: none;
 			text-decoration-style: none;
 			list-style-type: none;
+			padding:25px;
 
 			&:hover {
 				background-color:red;
 				cursor: pointer;
 				text-align: center;
-				padding: 15px;
+				padding: 25px;
 				display: flex;
 				align-items: center;
 			}
@@ -141,18 +144,20 @@
 				border: none;
 				outline: none;
 				color: white;
-				padding: 14px 16px;
 				background-color: inherit;
 				font-family: inherit;
 				margin: 0;
-				padding: 15px;
+				padding: 5px;
+				text-decoration: none;
+				width: 60px;
 
 				&:hover {
 					background-color :red;
 				}
+
 			  }
 		}
-
+ 
 		.dropdown-content {
 			display: none;
 			position: absolute;
@@ -160,6 +165,7 @@
 			min-width: 160px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			z-index: 1;
+			margin-top: 75px;
 
 			a {
 				float: none;
@@ -185,12 +191,18 @@
 		  .dropdown {
 			float: left;
 			overflow: hidden;
-			padding-left: 200px;
+			display: flex;
+			
 			
 			img {
 				border-radius: 50%;
-				width: 12%;
+				width: 55px;
+				height: 55px;
 				text-align:right;
+				padding: 2px;
+				margin-right: 10px;
+				margin-top: 8px
+
 			}
 		
 		}

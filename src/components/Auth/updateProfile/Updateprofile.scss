@@ -24,6 +24,16 @@
     padding: 20px 40px;
     border-radius: 10px;
     background-color: rgba($color:black, $alpha: 0.8);
+
+    .close {
+        border: none;
+        font-size: 2rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        color: red;
+        
+      }
 }
 
 form {

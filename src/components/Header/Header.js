@@ -1,9 +1,43 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, {useState, useEffect} from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../Header/Header.scss";
 
+import Upload from "../Auth/UploadPhoto/Uploadphoto";
+import Signin from "../Auth/login/login";
+import Profile from "../Auth/updateProfile/Updateprofile";
+import Signup from "../Auth/register/register";
+
+import { SIGN_OUT } from "../../store/actions/auth";
+
 const Header = () => {
-  const login = false;
+  const [modal, setModal] = useState("");
+
+
+  const profile = "profile";
+  const signup = "signup";
+  const avatar = "avatar";
+  const signin = "signin";
+
+  const isLogin = useSelector(state => state.auth.isLogin)
+  const dispatch = useDispatch()
+  const stateUser = useSelector(state => state.auth.userData)
+
+
+  useEffect(() => {
+    localStorage.getItem('userData') && dispatch({type: "GET_USER"})
+  }, [])
+
+  const clickModal = e => {
+    setModal({
+      [e.target.id]: !modal[e.target.id]
+    });
+  };
+
+  const logout = () => {
+    console.log("logoutsucces")
+    dispatch(SIGN_OUT());
+  };
+
 
   return (
     <div className="header">
@@ -14,7 +48,9 @@ const Header = () => {
           className="header__logo"
         />
       </div>
-      <div className="container-search">
+      <div className="container-navbar">
+        <ul>
+        <div className="container-search">
         <div className="searchbox">
           <input
             type="text"
@@ -38,32 +74,43 @@ const Header = () => {
           </svg>
         </div>
       </div>
-      <div className="container-navbar">
-        <ul>
-          {login ? (
+          {!isLogin ? (
             <li>
-              <button class="dropbtn">
-                Sign
-              </button>
+              <a class="dropbtn" href="/#" onClick={clickModal} id={signin}>
+                Sign in
+              </a>
             </li>
           ) : (
             <div class="dropdown">
               <img
-                src={require("../../assets/profile.jpg")}
+                src={stateUser.image}
                 alt="logo"
                 className="header__logo"
               />
+              <p>{stateUser.email}</p>
               <div class="dropdown-content">
-                <a href="/#">Profile</a>
-                <a href="/#">avatar</a>
-                <a href="/#">Sign Out</a>
+                <a href="/#" onClick={clickModal} id={profile}>Update Profile</a>
+                <a href="/#" onClick={clickModal} id={avatar}>Update Avatar</a>
+                <a href="/#" onClick={logout}>Sign Out</a>
               </div>
             </div>
           )}
         </ul>
       </div>
+      {modal[signup] ? (
+        <Signup clickModal={clickModal} signin={signin} />
+      ) : (
+        false
+      )}
+      {modal[signin] ? (
+        <Signin clickModal={clickModal} signup={signup} />
+      ) : (
+        false
+      )}
+      {modal[profile] ? <Profile clickModal={clickModal} /> : false}
+      {modal[avatar] ? <Upload clickModal={clickModal} /> : false}
     </div>
   );
 };
 
-export default connect()(Header);
+export default (Header);

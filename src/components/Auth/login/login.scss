@@ -9,6 +9,7 @@
     position: fixed;
     z-index: 1;
     
+    
     h1 {
         font-weight: 600;
         color: white;
@@ -24,7 +25,9 @@
     padding: 20px 40px;
     border-radius: 10px;
     background-color: rgba($color:black, $alpha: 0.8);
+
 }
+
 
 form {
     width: 100%;

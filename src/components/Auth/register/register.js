@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import '../register/register.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {Link} from "react-router-dom";
+import '../register/register.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { connect } from 'react-redux';
+import {registration} from '../../../store/actions/auth'
+
 
 
 const emailRegex = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
@@ -21,38 +23,33 @@ class Registration extends Component {
     super(props);
 
     this.state = {
-      firstName: null,
+      name: null,
       email: null,
       password: null,
+      password_confirmation: null,
       Redirect: false,
       formErrors: {
-        firstName:"",
+        name:"",
         email:"",
-        password:""
+        password:"",
+        password_confirmation:""
       }
     }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
     handleSubmit = e => {
       e.preventDefault();
-
-      if(formValid(this.state.formErrors)) {
-        console.log(`
-        --SUBMITTING--
-        First Name: ${this.state.firstName}
-        Email: ${this.state.email}
-        Password: ${this.state.password}
-        `)
-      } else {
-        console.error('FORM INVALID - DISPLAY ERROR MESSAGE');
-         
+      console.log("test");
+      const newUser = {
+        name: this.state.name,
+        email: this.state.email,
+        password: this.state.password,
+        password_confirmation: this.state.password_confirmation
       }
+      this.props.registration(newUser)
     }
 
     handleChange = e => {
-      e.preventDefault();
       const {name, value} = e.target;
       let formErrors = {...this.state.formErrors};
       this.setState ({
@@ -61,8 +58,8 @@ class Registration extends Component {
 
 
       switch (name) {
-        case 'firstName' :
-          formErrors.firstName = value.length < 3 ? 'minimum 3 characters required': "";
+        case 'name' :
+          formErrors.name = value.length < 3 ? 'minimum 3 characters required': "";
         break;
         
         case 'email' :
@@ -71,6 +68,10 @@ class Registration extends Component {
         
         case 'password' :
           formErrors.password = value.length < 6 ? 'minimum 6 characters required': "";
+        break;
+
+        case 'password_confirmation' :
+          formErrors.password_confirmation = value.length < 6 ? 'minimum 6 characters required': "";
         break;
         default:
         break;
@@ -83,27 +84,6 @@ class Registration extends Component {
     }
 
 
-    registration = async(e) => {
-      e.preventDefault()
-      try {
-          let res = await fetch("https://ga-todolist.herokuapp.com/api/user/register", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body:JSON.stringify({ 
-            "name": this.state.firstName,
-            "email": this.state.email,
-            "password": this.state.password,
-            "password_confirmation": this.state.password
-          })
-        }) 
-        await res.json();
-      }catch(err) {
-        console.log(err)
-      }
-    }
-
 
   render(){
     
@@ -112,17 +92,22 @@ class Registration extends Component {
     return (
         <div className="wrapper">
           <div className="form-wrapper">
+          <FontAwesomeIcon
+                className="close"
+                icon='window-close' 
+                onClick={this.props.clickModal}
+          /> 
           <h1>Sign Up</h1>
-          <form onClick={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
             <div className="firstName">
                 <label>First Name</label>
                   <FontAwesomeIcon
                   className="iconawesome"
                   icon='user' 
                   />
-                  <input className="valid" type="text" placeholder="First Name" id="firstName" required onChange={this.handleChange}  name="firstName" />
-              {formErrors.firstName.length > 0 && (
-                <span className="errorMessage">{formErrors.firstName}</span>
+                  <input className="valid" type="text" placeholder="First Name" id="name" required onChange={this.handleChange}  name="name" />
+              {formErrors.name.length > 0 && (
+                <span className="errorMessage">{formErrors.name}</span>
               )}
             </div>
           
@@ -131,6 +116,7 @@ class Registration extends Component {
                 <FontAwesomeIcon
                   className="iconawesome"
                   icon='envelope' 
+                  onClick={this.props.clickModal}
                 /> 
             <input type="text" placeholder="Email" id="email" required onChange={this.handleChange} name="email" />
             {formErrors.email.length > 0 && (
@@ -149,10 +135,26 @@ class Registration extends Component {
               <span className="errorMessage">{formErrors.password}</span>
             )}
           </div>
+
+          <div className="password">
+            <label>Password_Confirmation</label>
+                <FontAwesomeIcon
+                  className="iconawesome"
+                  icon='lock' 
+                />
+            <input type="password" placeholder="Password" id="password_confirmation" required onChange={this.handleChange} name="password_confirmation" />
+            {formErrors.password_confirmation.length > 0 && (
+              <span className="errorMessage">{formErrors.password_confirmation}</span>
+            )}
+          </div>
           
           <div className="createAccount">
-            <button type="submit" onClick={this.registration}>Create Account</button>
-            <small>Already Have an Account? Go to <Link to="/login" className="button-signup">Sign in!</Link></small>
+            <button type="submit">Create Account</button>
+            <small>Already Have an Account? Go to 
+            <a id={this.props.signin} href="/#" onClick={this.props.clickModal}>
+            Sign In!
+            </a>
+            </small>
           </div>
         </form>
         </div>
@@ -163,4 +165,8 @@ class Registration extends Component {
   
 }
 
-export default Registration;
+const mapStateToProps = state => ({
+    register: state.register
+})
+
+export default connect (mapStateToProps, {registration}) (Registration);

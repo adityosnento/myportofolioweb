@@ -22,7 +22,7 @@ class SimpleSlider extends Component {
     const settings = {
       dots: false,
       infinite: false,
-      speed: 500,
+      speed: 200,
       slidesToShow: 1,
       arrows: false,
       slidesToScroll: 1,

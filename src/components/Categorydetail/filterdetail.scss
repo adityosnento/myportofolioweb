@@ -1,11 +1,11 @@
 .category-detail {
-    width: 70%;
+    width: 100%;
     box-sizing: border-box;
     padding: 0px 100px;
     margin-top: 20px;
     
 
-    ol {
+    .category__ol {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -16,22 +16,32 @@
 
         
         li {
-            padding: 10px;
+            padding: 20px;
+
+            a{
+                text-decoration: none;
+                color: black;
+                    &:hover{
+                        color: white;
+            }
+            }
+
+
         }
         
         
         li:hover {
             background-color: black;
             color: white;
-            padding: 10px;
+            padding: 20px;
             border-radius: 5px;
             cursor: pointer;
         }
 
-        li:active {
+        .active {
             background-color: black;
             color: white;
-            padding: 10px;
+            padding: 20px;
             border-radius: 5px;
             cursor: pointer;
         }

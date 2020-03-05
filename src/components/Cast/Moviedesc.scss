@@ -3,10 +3,8 @@
     height: 60vh;
     box-sizing: border-box;
     display: block;
-    padding: 40px;
     padding-top: 10px;
     border-top: 1px solid #d7d7d7;
-    padding-left: 100px;
 
     h3 {
         font-weight: 600;
@@ -16,12 +14,11 @@
         padding-left: 20px;
     }
 
-    ol {
+    .people {
         line-height: 1.4em;
         list-style-type: none;
         list-style-position: inside;
         margin: 0;
-        padding-left: 20px;
         display: flex;
         
             li {

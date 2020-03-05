@@ -10,6 +10,7 @@ const Footer = () => {
                 src={require('../../assets/netflix.png')} 
                 alt="logo"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p className="footer-p">Copyright &copy; 2020 - 2020 mofllix. All Rights Reserved</p>
             </div>
             <div className="service">
                 <ul>

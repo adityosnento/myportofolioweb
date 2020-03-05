@@ -1,12 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import '../Moviedesc/Moviedesc.scss';
+import './Moviedesc.scss';
 
 const Moviedesc = () => {
     return (
         <div className="desc-container">
            <div className="cast-title">
-               <h3>Series of Cast</h3>
+               <h3 id="Cast">Series of Cast</h3>
                <ol className="people">
                    <li className="card">
                        <img 
