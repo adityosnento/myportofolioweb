@@ -48,6 +48,34 @@
         }
     }
 
+    .hover {
+        padding:20px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    
+    .text-black {
+        padding:20px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:active{
+            opacity: 0.5;
+            color: blue;
+            background-color: yellow;
+        }
+
+
+    }
+
 
 
 }

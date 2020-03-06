@@ -1,7 +1,8 @@
-import { GET_MOVIE, GET_MOVIE_ACTION, GET_MOVIE_DRAMA, GET_MOVIE_ADVENTURE} from "../actions/types";
+import { GET_MOVIE, GET_MOVIE_FILTER} from "../actions/types";
 
 const initialState = {
-  movies: [],
+  movies: false,
+  genres: false,
   errors: null
 };
 
@@ -13,20 +14,10 @@ const getMovies = (state = initialState, action) => {
         ...state,
         movies: payload
       };
-    case GET_MOVIE_ACTION:
+    case GET_MOVIE_FILTER:
       return {
         ...state,
-        movies: payload
-      };
-    case GET_MOVIE_DRAMA:
-      return {
-        ...state,
-        movies: payload
-      };
-    case GET_MOVIE_ADVENTURE:
-      return {
-        ...state,
-        movies: payload
+        genres: payload
       };
     default:
       return {

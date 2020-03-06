@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../Category filter/filter.scss'
-import Action from '../Genre_Movie/Actions'
 import All from '../Genre_Movie/Cardmovie'
 
 function Filter() {
@@ -51,7 +50,6 @@ function Filter() {
             </ol>
             <div>
                 {genre === all ? <All/> : false}
-                {genre === action ? <Action/> : false }
                {/* 
                {genre === fantasy ? <Fantasy/> : false }
                {genre === romance ? <Romance/> : false }

@@ -1,9 +1,9 @@
 import {GET_MOVIE, ERROR} from "./types";
-const baseURL = "https://gamovieapp.herokuapp.com/api";
+const baseURL = "https://awesome-movie-data.herokuapp.com/api/v1";
 
-export const getMovies = () => async dispatch => {
+export const getMovies = (pageNumber) => async dispatch => {
     try {
-        const res = await fetch (`${baseURL}/movie`);
+        const res = await fetch (`${baseURL}/movies/all/?page=${pageNumber}`);
         const data = await res.json();
         dispatch({
             type: GET_MOVIE,
@@ -18,13 +18,12 @@ export const getMovies = () => async dispatch => {
     }
 }
 
-export const GET_MOVIE_ACTION = (action) => async dispatch => {
-    console.log(await fetch (`${baseURL}/movie/?page=1&field=genre&value=${action}`))
+export const GET_MOVIE_FILTER = (action) => async dispatch => {
     try {
-        const res = await fetch (`${baseURL}/movie/?page=1&field=genre&value=${action}`);
+        const res = await fetch (`${baseURL}/movies/allgenre`);
         const data = await res.json();
         dispatch({
-            type: GET_MOVIE_ACTION,
+            type: GET_MOVIE_FILTER,
             payload: data.data
         })
     } catch (error) {
@@ -36,36 +35,3 @@ export const GET_MOVIE_ACTION = (action) => async dispatch => {
     }
 }
 
-export const GET_MOVIE_DRAMA = () => async dispatch => {
-    try {
-        const res = await fetch (`${baseURL}/movie/genre=drama`);
-        const data = await res.json();
-        dispatch({
-            type: GET_MOVIE_DRAMA,
-            payload: data.data.docs
-        })
-    } catch (error) {
-        console.log(error)
-        dispatch({
-            type: ERROR,
-            payload: error
-        })
-    }
-}
-
-export const GET_MOVIE_ADVENTURE = () => async dispatch => {
-    try {
-        const res = await fetch (`${baseURL}/movie/genre=adventure`);
-        const data = await res.json();
-        dispatch({
-            type: GET_MOVIE_ADVENTURE,
-            payload: data.data.docs
-        })
-    } catch (error) {
-        console.log(error)
-        dispatch({
-            type: ERROR,
-            payload: error
-        })
-    }
-}

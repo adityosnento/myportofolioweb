@@ -9,6 +9,6 @@ export const ADD_POST = "ADD_POST";
 export const POST = "POST";
 export const GET_MOVIE = "GET_MOVIE"
 export const CHANGE_AVATAR = "CHANGE_AVATAR"
-export const GET_MOVIE_ACTION = "GET_MOVIE_ACTION"
+export const GET_MOVIE_FILTER = "GET_MOVIE_FILTER"
 export const GET_MOVIE_DRAMA = "GET_MOVIE_DRAMA"
 export const GET_MOVIE_ADVENTURE ="GET_MOVIE_ADVENTURE"
