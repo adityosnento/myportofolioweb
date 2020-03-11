@@ -29,7 +29,6 @@ const Routes = () => {
 
       <Route path="/:id">
         <div className="display">
-          <Mainphoto />
           <FilterDetail />
         </div>
       </Route>

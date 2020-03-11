@@ -6,23 +6,48 @@
     object-fit: cover;
     height: 80vh;
     opacity: 0.1 black;
+    display: flex;
 
     .container-desc {
-        padding-top: 100px;
+        padding-top: 150px;
         width: 40%;
         margin-left: 50px;
         color: white;
 
-        h1 {
+        h2 {
             color: white;
+            text-align: left;
+            padding:0px;
+            font-size: 34px;
+        }
+
+        .iconawesome {
+            color: yellow;
+            margin-right: 10px;
+        }
+
+        p{
+            font-size: 18px;
         }
     }
     
+    .cover-atas{
+        margin-top:100px;
+        img{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            margin-top: 40px;
+            border-radius: 30px;
+        }
+    }
+
     .button-play {
-        display: flex;
-        padding: 15px;
-        font-size: 12px;
-        justify-content: space-around;
+       display: flex;
+       button {
+        margin-right: 20px;
+       }
     }
 
     button:hover{
@@ -35,15 +60,14 @@
         background-color: red;
         color: #fff;
         border: 2px solid #fff;
-        width: 100%;
+        width: 25%;
         margin-top: 1em;
-        padding: 8px 0px;
-        font-size: 1em;
+        font-size: 0.8em;
         font-weight: lighter;
         letter-spacing: 1px;
         margin-bottom: 0.25em;
         border-radius: 4px;
-        padding: 12px;
+        padding: 6px;
         cursor: pointer;
     }
     

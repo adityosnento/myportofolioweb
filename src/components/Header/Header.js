@@ -100,7 +100,7 @@ const Header = () => {
                 alt="logo"
                 className="header__logo"
               />
-              <p>{stateUser.email}</p>
+              <p>Hi. Adit</p>
               <div class="dropdown-content">
                 <a href="/#" onClick={clickModal} id={profile}>Update Profile</a>
                 <a href="/#" onClick={clickModal} id={avatar}>Update Avatar</a>

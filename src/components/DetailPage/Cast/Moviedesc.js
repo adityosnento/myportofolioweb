@@ -16,6 +16,30 @@ const Moviedesc = () => {
                         <p className="cast-name">James Taylor</p>
                         <p className="character">Obi-Wan Kenobi, </p>
                    </li>
+                   <li className="card">
+                       <img 
+                        src={require('../../../assets/people/6.jpg')} 
+                        alt="logo"
+                        />
+                        <p className="cast-name">James Taylor</p>
+                        <p className="character">Obi-Wan Kenobi, </p>
+                   </li>
+                   <li className="card">
+                       <img 
+                        src={require('../../../assets/people/5.jpg')} 
+                        alt="logo"
+                        />
+                        <p className="cast-name">James Taylor</p>
+                        <p className="character">Obi-Wan Kenobi, </p>
+                   </li>
+                   <li className="card">
+                       <img 
+                        src={require('../../../assets/people/4.jpg')} 
+                        alt="logo"
+                        />
+                        <p className="cast-name">James Taylor</p>
+                        <p className="character">Obi-Wan Kenobi, </p>
+                   </li>
                </ol>
 
            </div>
