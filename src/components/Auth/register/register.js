@@ -8,15 +8,6 @@ import {registration} from '../../../store/actions/auth'
 
 const emailRegex = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
 
-const formValid = formErrors => {
-  let valid = true;
-
-  Object.values(formErrors).forEach(val => {
-    val.length > 0 && (valid = false);
-  });
-
-  return valid;
-};
 
 class Registration extends Component {
   constructor(props) {

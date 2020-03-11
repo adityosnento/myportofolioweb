@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../Category filter/filter.scss'
+import './filter.scss'
 import All from '../Genre_Movie/Cardmovie'
 
 function Filter() {
@@ -13,7 +13,7 @@ function Filter() {
 
     const [genre, setGenre] = useState();
 
-    return (
+    return (    
         <div className="category">
            <h2>Browse by Category</h2>
             <ol className="filter__homepage">

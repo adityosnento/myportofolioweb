@@ -1,9 +1,10 @@
-import { GET_MOVIE, GET_MOVIE_FILTER} from "../actions/types";
+import { GET_MOVIE} from "../actions/types";
 
 const initialState = {
   movies: false,
-  genres: false,
-  errors: null
+  genres: [],
+  errors: null,
+  movie_genre: false
 };
 
 const getMovies = (state = initialState, action) => {
@@ -14,11 +15,27 @@ const getMovies = (state = initialState, action) => {
         ...state,
         movies: payload
       };
-    case GET_MOVIE_FILTER:
+    case "GET_ALL_GENRE":
       return {
         ...state,
         genres: payload
       };
+    case "GET_GENRE":
+      return {
+        ...state,
+        movies: payload
+      }
+    case "SEARCH_GENRE":
+      return {
+        ...state,
+        movies: payload
+      }
+      case "GET_MOVIE_DETAIL":
+        console.log(payload)
+        return {
+          ...state,
+          movies: payload
+        }
     default:
       return {
         ...state

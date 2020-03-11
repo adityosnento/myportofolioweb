@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../Header/Header.scss";
+import {Link} from 'react-router-dom'
 
 import Upload from "../Auth/UploadPhoto/Uploadphoto";
 import Signin from "../Auth/login/login";
@@ -8,18 +9,19 @@ import Profile from "../Auth/updateProfile/Updateprofile";
 import Signup from "../Auth/register/register";
 
 import { SIGN_OUT } from "../../store/actions/auth";
+import {searchGenre} from "../../store/actions/movie_data";
 
 const Header = () => {
   const [modal, setModal] = useState("");
-
-
+  const [search, setSearch] = useState("");
+  
   const profile = "profile";
   const signup = "signup";
   const avatar = "avatar";
   const signin = "signin";
 
-  const isLogin = useSelector(state => state.auth.isLogin)
-  const dispatch = useDispatch()
+  const isLogin = useSelector(state => state.auth.isLogin);
+  const dispatch = useDispatch();
   const stateUser = useSelector(state => state.auth.userData)
 
 
@@ -38,15 +40,22 @@ const Header = () => {
     dispatch(SIGN_OUT());
   };
 
+  const searchMovie = () => {
+    console.log("halo")
+    dispatch(searchGenre(search));
+  }
+
 
   return (
     <div className="header">
       <div className="header__logo-box">
+        <Link to="/">
         <img
           src={require("../../assets/netflix.png")}
           alt="logo"
           className="header__logo"
         />
+        </Link>
       </div>
       <div className="container-navbar">
         <ul>
@@ -56,6 +65,10 @@ const Header = () => {
             type="text"
             className="searchbox__input"
             placeholder="Search Movies Here .."
+            onChange={e => {
+              setSearch(e.target.value)
+              searchMovie()
+            }}
           />
           <svg
             aria-hidden="true"

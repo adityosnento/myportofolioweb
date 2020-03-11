@@ -9,7 +9,6 @@ const Review = () => {
                <h3 className="auto" id="Social">Social</h3>
                <ul>
                    <li>Review</li>
-                   <li>Discussion</li>
                </ul>
            </div>
 
@@ -17,7 +16,7 @@ const Review = () => {
                 <div className="grouped">
                    <div className="avatar">
                        <img 
-                       src={require('../../assets/people/comment.jpg')} 
+                       src={require('../../../assets/people/comment.jpg')} 
                        alt="logo"/>
                    </div>
                    <div className="info">
@@ -34,7 +33,7 @@ const Review = () => {
                <div className="grouped">
                    <div className="avatar">
                        <img 
-                       src={require('../../assets/people/comment.jpg')} 
+                       src={require('../../../assets/people/comment.jpg')} 
                        alt="logo"/>
                    </div>
                    <div className="info">

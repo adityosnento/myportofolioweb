@@ -15,7 +15,7 @@ export const registration = userData => async dispatch => {
       body: JSON.stringify(userData)
     });
     console.log(res);
-    const data = await res.json();
+    await res.json();
     dispatch({
       type: POST_REGISTER
     });
