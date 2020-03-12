@@ -136,6 +136,9 @@ const Filterdetail = ({ movieDetail, movies }) => {
                   <h3>A Review by Adityo S. Nento</h3>
                 </div>
               </div>
+              <FontAwesomeIcon className="iconawesome" icon="star" />
+          <FontAwesomeIcon className="iconawesome" icon="star" />
+          <FontAwesomeIcon className="iconawesome" icon="star" />
             </div>
             <div className="comment-review">
               <p>
