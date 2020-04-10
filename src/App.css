@@ -2,15 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .display {
-  background-color:#ffff;
+  background-color:#212121;
   font-family: 'Montserrat';
   box-sizing: border-box;
-}
-
-
-h1 {
-    margin-left: 30px;
-    color: red;
+  margin: 0px;
+  padding: 0px;
 }

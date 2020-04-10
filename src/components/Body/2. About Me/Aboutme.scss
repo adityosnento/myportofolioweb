@@ -1,0 +1,97 @@
+.container__aboutme {
+    color: #dadada;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    transition: color 0.2s ease-out 0s;
+    background-color: #212121;
+    height: 135vh;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    .container__aboutme2 {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 80px 200px;
+
+        .aboutme__open {
+            h2 {
+                font-size: 2rem;
+                color: #127EB1;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin: 0px 0px 1rem;
+                transition: color 0.2s ease-out 0s;
+                text-align: center;
+            }
+
+            p {
+                font-size: 19px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .aboutme__explanation {
+            line-height: 30px;
+
+            span {
+                font-weight: 900;
+                background-color: #217EB1;
+                padding: 5px;
+                font-style: italic;
+            }
+
+            h2 {
+                margin-top: 70px;
+            }
+
+            a {
+                color: white;
+            }
+
+            h5 {
+                color: #127EB1;
+                width: 75%;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                line-height: 1.8;
+                font-weight: 700;
+                margin: 0px auto 1rem;
+            }
+
+            .btn-cv {
+                padding: 10px;
+
+                a {
+                    color: white;
+                    padding: 10px 20px;
+                    background-color: #089ECA;
+                    color: white;
+                    border: 2px solid #089ECA;
+                    cursor: pointer;
+                    margin: 0px 20px;
+                    border-radius: 10rem;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+
+                    svg {
+                        width: 1%;
+                        margin-right: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
+}

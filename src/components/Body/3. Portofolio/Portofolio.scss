@@ -1,0 +1,108 @@
+.container__portofolio {
+    color: #dadada;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 8rem;
+    transition: color 0.2s ease-out 0s;
+    background-color: #212121;
+    height: 350vh;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    width: 100%;
+    // padding: 80px 200px;
+   
+    .portofolio__title {
+        text-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        
+        h2 {
+            color: #217eb1;
+            text-transform: uppercase;
+        }
+    
+        p {
+            span {
+                font-weight: 900;
+                font-style: italic;
+            }
+        }
+    }
+
+    .portofolio__title__list {
+        text-align: center;
+        padding: 100px 0px 50px 0px;
+        width: 100%;
+
+        h3 {
+            font-weight: 900;
+            background-color: #217EB1;
+            padding: 5px 0px;
+            font-style: italic;
+            margin: 0px 350px;
+        }
+    }
+
+    .portofolio__list {
+        display: flex;
+
+        .portofolio__pic {
+            width: 50%;
+            padding: 10px 30px;
+            
+            img {
+                width: 100%;
+                box-shadow: 0 4px 30px rgba(0,0,0,.1);
+            
+                &:hover {
+                    box-shadow: 0 4px 30px rgba(0,0,0,1.2);
+                    cursor: pointer;
+                    -webkit-transition: opacity .2s ease-in;
+    transition: opacity .2s ease-in;
+                }
+            }
+        }
+
+        .portofolio__exp {
+            width: 50%;
+            margin-left: 40px;
+            p {
+                font-size: 13.5px;
+                line-height: 20px;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+
+            .portofolio__btn {
+                a {
+                    border-radius: 15px;
+                    background-color: #127EB1;
+                    padding: 15px 25px;
+                    margin: 10px 0px;
+                    margin-right: 25px;
+                    border-radius: 10rem;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                    color: white;
+
+                    svg {
+                        color: white;
+                        width: 2%;
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0px 15px 20px rgba(77, 198, 255, 0.1);                    
+                    }
+                }
+            }
+        }
+    }
+   
+}
