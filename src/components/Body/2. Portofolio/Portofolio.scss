@@ -1,0 +1,81 @@
+.container__portofolio {
+    margin: 0px 80px;
+    text-align: center;
+    height: 400vh;
+    padding: 60px;
+
+    .container__portofolio__hero {
+
+        .container__content1 {
+            margin-bottom: 60px;
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                margin-bottom: 20px;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .4s ease-in-out;
+                transition: .4s ease-in-out;
+
+
+                &:hover {
+                    -webkit-transform: scale(1.04);
+                    transform: scale(1.04);
+                    cursor: pointer;
+                    object-fit: cover;
+                }
+            }
+
+            .btn__content1 {
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+
+
+
+                .btn__content1__hero {
+                    display: flex;
+
+
+                    a {
+                        margin-right: 20px;
+                        text-decoration: none;
+                        color: black;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        width: 16%;
+                        border: 2px solid black;
+
+
+                        &:hover {
+                            color: purple;
+                            transition: all 0.2s ease-out 0s;
+                            cursor: pointer;
+                        }
+                    }
+
+                    svg {
+                        width: 16%;
+                        margin-right: 10px;
+                        min-width: 15%;
+                        background-color: black;
+                        padding:10px;
+                        color: white;
+                        
+                    }
+
+                    #github {
+                        width: 16%;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

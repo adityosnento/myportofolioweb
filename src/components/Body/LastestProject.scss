@@ -1,0 +1,22 @@
+.container__project {
+    padding: 50px 0px;
+    height: 130vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+
+    .container__project__hero {
+        text-align: center;
+
+
+        .project__title {
+            padding-bottom: 50px;
+        }
+    }
+
+    .project__url {
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,48 @@
+.hireme__container {
+    padding: 40px 80px;
+    height: 70vh;
+    background-color: #fed135;
+    .hireme__container__hero{
+
+        .hireme__title{
+            
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .hireme__content__hero{
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           padding: 30px 0px;
+           
+
+            .hireme__content{
+            padding: 0px 30px;
+            
+                img {
+                    width:150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+
+                .hireme__description {
+                    
+                    h5{
+                        font-size: 16px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+
+            }
+        }
+
+        
+    }
+}

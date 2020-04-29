@@ -1,0 +1,115 @@
+.skills__container {
+    height:80vh;
+    padding: 80px 0px;
+    display: flex;
+    
+
+    .skills__container__hero {
+        width: 100%;
+        padding: 0px 80px;
+        display: flex;
+        
+        .skills__container__title {
+            width: 30%;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: left;
+            
+            h1{
+                text-align: left;
+                text-transform: uppercase;
+                line-height: 50px;
+                font-weight: 900;
+                letter-spacing: 1px;               
+            }
+
+            .skills__contact {
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .skills__img {
+           
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 30px 0px;
+            
+           .background__side__img {
+                img {
+                    width: 50%;
+                }
+           }
+
+           .skills__logo2 {
+               padding: 0px 100px;
+
+               .detail__skills{
+              
+                display: flex;
+                width: 100%;
+                
+                img {
+                    height: 30px;
+                    width: 30px;
+                    padding-right: 20px;
+                }
+
+                p {
+                    width: 50%;
+                    font-size: 15px;
+                    border-bottom: 2px solid grey;
+                }
+               }
+            
+           }
+
+           .skills__logo1{
+            padding: 0px 100px;
+            width: 100%;
+            padding-bottom: 20px;
+
+            .skills__title {
+                
+                h2 {
+                    border-bottom: 2px solid rgba(0,0,0,.2);
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .detail__skills{
+                display: flex;  
+                width: 100%;
+                
+             .detail__design {
+                 width: 50%;
+             }
+
+             .detail__development {
+                 width: 50%;
+             }
+
+             p {
+                 width: 100%;
+                 font-size: 15px;
+                 border-bottom: 1px solid rgba(0,0,0,.1);
+                 padding-bottom: 10px;
+             }
+
+             h4 {
+                 font-weight: 900;
+                 border-top: 0px;
+               
+             }
+            }
+         
+        }
+        }
+    }
+}

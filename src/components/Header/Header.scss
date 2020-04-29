@@ -1,5 +1,5 @@
 .container__nav {
-    padding: 0rem 4rem;
+    padding: 0px 50px;
     margin: 0px auto;
     display: flex;
     -webkit-box-align: center;
@@ -9,15 +9,15 @@
     justify-content: space-between;
     user-select: none;
     transition: all 0.2s ease-out 0s;
-    position: fixed;
-    height: 12vh;
+    position: sticky;
     top: 0px;
     left: 0px;
     z-index: 20;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-    background: black;
-    width: 91vw;
-    opacity: 0.8;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    max-width: 1440px;
 
 
     .container__nav__right {
@@ -29,7 +29,7 @@
                 font-family: inherit;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: #dadada;
+                color: black;
                 cursor: pointer;
                 font-size: 0.8rem;
                 text-decoration: none;
@@ -39,6 +39,17 @@
 
                 &:hover {
                     color: #089ECA;
+                }
+            }
+
+            #contact{
+                box-sizing: border-box;
+                    background-color: #FD346E;
+                    color: white;
+                    border-radius: 5px;
+                &:hover {
+                
+
                 }
             }
         }
