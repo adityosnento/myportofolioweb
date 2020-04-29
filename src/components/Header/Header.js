@@ -11,9 +11,9 @@ export default class Header extends Component {
           </div>
           <div className="container__nav__right">
             <div className="container__navigasi">
-              <a>About Me</a>
-              <a>Portofolio</a>
-              <a id="contact">Contact</a>
+              <a href="/#">About Me</a>
+              <a href="/#">Portofolio</a>
+              <a href="/#" id="contact">Contact</a>
             </div>
           </div>
         </div>

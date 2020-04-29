@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import '../1. Welcome Slide/Welcome.scss'
-import Typing from 'react-typing-animation';
 import TextLoop from "react-text-loop";
 
 export default class Welcome extends Component {

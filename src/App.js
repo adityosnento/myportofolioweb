@@ -4,7 +4,6 @@ import { BrowserRouter as Router} from "react-router-dom";
 import "./App.css";
 
 import Header from "./components/Header/Header";
-import Footer from "./components/Body/6. Footer/Footer";
 import Routes from "./components/routes";
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
     <Router>
       <Header />
       <Routes />
-      {/* <Footer /> */}
     </Router>
     </div>
   );

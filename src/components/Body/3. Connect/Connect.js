@@ -10,32 +10,32 @@ export default class Connect extends Component {
             <h1>Stay Connect With Me!</h1>
           </div>
           <div className="connect__content__container">
-            <div className="connect__content__hero">
-              <div className="connect__content">
+            <div className="connect__content__hero"> 
+              <a className="connect__content" href="https://www.instagram.com/adityosnento/">
                 <img
                   src={require("../../../assets/instagram.svg")}
                   alt="portofolio"
                 />
                 <p>Sharing daily inspiration, tips and my work process.</p>
-              </div>
+              </a>
             </div>
             <div className="connect__content__hero">
-              <div className="connect__content">
+              <a className="connect__content" href="https://www.linkedin.com/in/adityo-singodihardjo-n-808739138/">
                 <img
                   src={require("../../../assets/linked-in.svg")}
                   alt="portofolio"
                 />
                 <p>Connect to know about my last project or proffesional experience</p>
-              </div>
+              </a>
             </div>
             <div className="connect__content__hero">
-              <div className="connect__content">
+              <a className="connect__content" href="https://github.com/adityosnento">
                 <img
                   src={require("../../../assets/github-square-brands.svg")}
                   alt="portofolio"
                 />
                 <p>Sharing daily inspiration, tips and my work process.</p>
-              </div>
+              </a>
             </div>
             <div className="connect__content__hero">
               <div className="connect__content">
