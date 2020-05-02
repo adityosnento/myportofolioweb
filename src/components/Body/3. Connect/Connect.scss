@@ -74,3 +74,44 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  
+  .connect__container {
+    height:70vh;
+
+    .connect__container__hero {
+      padding: 5px 10px;
+      box-sizing: border-box;
+
+      .connect__content__container {
+          padding: 0px 40px;
+        
+      .connect__content__hero {
+          
+        .connect__content {
+           padding: 0px 10px;
+           width: 22vw;
+  
+          img {
+              width: 50ox;
+              height: 50px;
+              padding: 20px 0px;
+            }
+          
+          p {
+              font-size: 12px;
+              line-height: 20px;
+              text-decoration: none;
+          
+          }
+
+          
+          }
+        }
+      }
+    }
+  }
+ 
+ 
+}

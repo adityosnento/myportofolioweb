@@ -46,7 +46,7 @@
                         display: flex;
                         justify-content: left;
                         align-items: center;
-                        width: 16%;
+                        width: 12%;
                         
 
 
@@ -83,8 +83,64 @@
 @media only screen and (min-width: 768px) {
     
     .container__portofolio {
-        height: 330vh;
-        
+        margin: 0px 30px;
+        height: 310vh;
+        padding: 30px;
+    
+        .container__portofolio__hero {
+    
+            .container__content1 {
+    
+                .btn__content1 {
+                    text-align: left;
+                    width: 100%;
+                    box-sizing: border-box;
+    
+    
+    
+                    .btn__content1__hero {
+                        display: flex;
+    
+    
+                        a {
+                            margin-right: 20px;
+                            text-decoration: none;
+                            color: black;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: left;
+                            align-items: center;
+                            width: 12%;
+                            
+    
+    
+                            &:hover {
+                                color: purple;
+                                transition: all 0.2s ease-out 0s;
+                                cursor: pointer;
+                            }
+                        }
+    
+                        svg {
+                            width: 16%;
+                            margin-right: 10px;
+                            min-width: 15%;
+                           
+                            color: black;
+                            
+                        }
+    
+                        #github {
+                            width: 16%;
+    
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+    
     }
    
 }
@@ -99,10 +155,27 @@
    
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1024px) {
     
     .container__portofolio {
-        height: 320vh;
+        height: 330vh;
+
+        .container__portofolio__hero{
+
+            .container__content1{
+
+                .btn__content1{
+
+                    .btn__content1__hero {
+
+                        a {
+                            width: 20%;
+                        }
+
+                    }
+                }
+            }
+        }
         
     }
    
@@ -111,7 +184,7 @@
 @media only screen and (min-width: 1200px) {
     
     .container__portofolio {
-        height: 320vh;
+        height: 360vh;
         
     }
    

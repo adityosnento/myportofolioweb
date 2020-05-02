@@ -9,7 +9,7 @@
     justify-content: space-between;
     user-select: none;
     transition: all 0.2s ease-out 0s;
-    position: sticky;
+    position: static;
     top: 0px;
     left: 0px;
     z-index: 20;
@@ -55,7 +55,7 @@
         }
 
         .menu__toggle {
-            display: flex;
+            display: none;
             flex-direction: column ;
             height: 22px;
             justify-content: space-between;
@@ -125,6 +125,10 @@
         .container__navigasi {
             display: none;
         }
+
+        .menu__toggle {
+            display: flex;
+        }
     }
    }
 }
@@ -135,8 +139,21 @@
  
      .container__nav__right {
          .container__navigasi {
-             display: none;
+            //  position:absolute;
+            //  right: 0;
+            //  flex-direction: column;
+            //  height: 20vh;
+            //  width: 100vw;
+            //  top: 0;
+            //  align-items: center;
+            //  justify-content: space-evenly;
+            //  background-color: red;
+            display: none;
          }
+
+         .menu__toggle {
+            display: flex;
+        }
      }
     }
  }

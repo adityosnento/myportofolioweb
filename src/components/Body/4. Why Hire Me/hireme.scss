@@ -2,6 +2,7 @@
     padding: 40px 80px;
     height: 60vh;
     background-color: #fed135;
+    
     .hireme__container__hero{
 
         .hireme__title{
@@ -51,5 +52,33 @@
     
     .hireme__container {
       height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .hireme__container {
+      height: 70vh;
+      padding: 40px 50px;
+
+      .hireme__container__hero {
+
+        .hireme__content__hero {
+
+            .hireme__content {
+
+                .hireme__description {
+                    font-size: 12px;
+                }
+            }
+        }
+      }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .hireme__container {
+      height: 80vh;
     }
 }

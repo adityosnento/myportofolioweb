@@ -134,8 +134,15 @@
 @media only screen and (min-width: 1024px) {
     
     .skills__container {
-        height: 70vh;
+        height: 80vh;
         
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .hireme__container {
+      height: 80vh;
     }
 }
 
