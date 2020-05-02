@@ -18,5 +18,38 @@
         text-align: center;
         display: inline-flex;
         justify-content: center;
+
+        .video{
+            width:"1200px";
+            height:"550px";
+        }
     }
+}
+
+@media only screen and (min-width: 1440px) {
+    
+    .container__project {
+       height: 110vh
+        
+    }
+   
+}
+
+
+@media only screen and (min-width: 1024px) {
+    
+    .container__project {
+       height: 100vh
+        
+    }
+   
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .container__project {
+       height: 100vh
+        
+    }
+   
 }

@@ -12,7 +12,7 @@ class LastestProject extends Component {
             <h1>MY LASTEST PROJECT</h1>
           </div>
           <div className="project__url">
-            <ReactPlayer url="https://www.youtube.com/watch?v=QGMi1DgFd_A" height="450px" width="900px"/>
+            <ReactPlayer id="video" url="https://www.youtube.com/watch?v=QGMi1DgFd_A"/>
           </div>
           </div>
         </div>

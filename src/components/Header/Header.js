@@ -15,6 +15,13 @@ export default class Header extends Component {
               <a href="/#">Portofolio</a>
               <a href="/#" id="contact">Contact</a>
             </div>
+
+            <div className="menu__toggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>

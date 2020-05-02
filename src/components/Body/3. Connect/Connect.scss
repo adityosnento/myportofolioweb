@@ -1,11 +1,12 @@
 .connect__container {
-  height: 60vh;
+  height:55vh;
   color: black;
   background-color: #fed135;
   width: 100%;
+  box-sizing: border-box;
 
   .connect__container__hero {
-    padding: 10px 100px;
+    padding: 10px 40px;
     box-sizing: border-box;
 
     .connect__title {
@@ -20,14 +21,15 @@
     .connect__content__container {
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 0px 100px;
+        justify-content: space-between;
+        padding: 0px 80px;
       
     .connect__content__hero {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
 
         a {
           text-decoration: none;
@@ -36,9 +38,10 @@
         
 
         .connect__content {
-         padding: 0px 20px;
+         padding: 0px 10px;
          text-align: center;
-         width: 250px;
+         width: 20vw;
+         box-sizing: border-box;
 
         img {
             width: 60ox;

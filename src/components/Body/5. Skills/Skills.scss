@@ -47,7 +47,8 @@
            }
 
            .skills__logo2 {
-               padding: 0px 100px;
+              
+               box-sizing: border-box;
 
                .detail__skills{
               
@@ -70,9 +71,9 @@
            }
 
            .skills__logo1{
-            padding: 0px 100px;
             width: 100%;
             padding-bottom: 20px;
+            box-sizing: border-box;
 
             .skills__title {
                 
@@ -113,3 +114,28 @@
         }
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    
+    .skills__container {
+        height: 70vh;
+        
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    .skills__container {
+        height: 60vh;
+        
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .skills__container {
+        height: 70vh;
+        
+    }
+}
+

@@ -1,6 +1,6 @@
 .hireme__container {
     padding: 40px 80px;
-    height: 70vh;
+    height: 60vh;
     background-color: #fed135;
     .hireme__container__hero{
 
@@ -44,5 +44,12 @@
         }
 
         
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    .hireme__container {
+      height: 70vh;
     }
 }
