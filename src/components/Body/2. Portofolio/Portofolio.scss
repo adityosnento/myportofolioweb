@@ -1,208 +1,180 @@
 .container__portofolio {
-    margin: 0px 80px;
-    text-align: center;
-    height: 400vh;
-    padding: 60px;
+  margin: 0px 80px;
+  text-align: center;
+  height: 440vh;
+  padding: 60px;
+
+  .container__portofolio__hero {
+    .container__content1 {
+      margin-bottom: 60px;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+          -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+          cursor: pointer;
+          object-fit: cover;
+        }
+      }
+
+      .btn__content1 {
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+
+        .btn__content1__hero {
+          display: flex;
+
+          a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 12%;
+
+            &:hover {
+              color: purple;
+              transition: all 0.2s ease-out 0s;
+              cursor: pointer;
+            }
+          }
+
+          svg {
+            width: 16%;
+            margin-right: 10px;
+            min-width: 15%;
+
+            color: black;
+          }
+
+          #github {
+            width: 16%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .container__portofolio {
+    height: 360vh;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .container__portofolio {
+    height: 390vh;
 
     .container__portofolio__hero {
+      .container__content1 {
+        .btn__content1 {
+          .btn__content1__hero {
+            a {
+              width: 17%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
+@media only screen and (max-width: 1024px) {
+  .container__portofolio {
+    margin: 0px 30px;
+    height: 365vh;
+
+    .container__portofolio__hero {
+      .container__content1 {
+        .btn__content1 {
+          .btn__content1__hero {
+            a {
+              width: 16%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .container__portofolio {
+      margin: 0px 20px;
+      height: 280vh;
+  
+      .container__portofolio__hero {
         .container__content1 {
-            margin-bottom: 60px;
+          .btn__content1 {
+            .btn__content1__hero {
+              a {
+                width: 22%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-            img {
-                border-radius: 10px;
-                width: 100%;
-                margin-bottom: 20px;
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                -webkit-transition: .4s ease-in-out;
-                transition: .4s ease-in-out;
-
-
+  @media only screen and (max-width: 375px) {
+    .container__portofolio {
+      margin: 0px 5px;
+      height: 180vh;
+      padding: 10px;
+    
+      .container__portofolio__hero {
+        .container__content1 {
+          margin-bottom: 30px;
+    
+          img {
+            border-radius: 5px;
+          }
+    
+          .btn__content1 {
+            .btn__content1__hero {
+    
+              a {
+                margin-right: 20px;
+                text-decoration: none;
+                color: black;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+    
                 &:hover {
-                    -webkit-transform: scale(1.04);
-                    transform: scale(1.04);
-                    cursor: pointer;
-                    object-fit: cover;
+                  color: purple;
+                  transition: all 0.2s ease-out 0s;
+                  cursor: pointer;
                 }
+              }
+    
+              svg {
+                margin-right: 10px;
+                width: 14%;
+                color: black;
+              }
+    
+              #github {
+                width: 14%;
+              }
             }
-
-            .btn__content1 {
-                text-align: left;
-                width: 100%;
-                box-sizing: border-box;
-
-
-
-                .btn__content1__hero {
-                    display: flex;
-
-
-                    a {
-                        margin-right: 20px;
-                        text-decoration: none;
-                        color: black;
-                        border-radius: 5px;
-                        display: flex;
-                        justify-content: left;
-                        align-items: center;
-                        width: 12%;
-                        
-
-
-                        &:hover {
-                            color: purple;
-                            transition: all 0.2s ease-out 0s;
-                            cursor: pointer;
-                        }
-                    }
-
-                    svg {
-                        width: 16%;
-                        margin-right: 10px;
-                        min-width: 15%;
-                       
-                        color: black;
-                        
-                    }
-
-                    #github {
-                        width: 16%;
-
-                    }
-                }
-            }
-
-
+          }
         }
+      }
     }
-
-}
-
-
-@media only screen and (min-width: 768px) {
-    
-    .container__portofolio {
-        margin: 0px 30px;
-        height: 310vh;
-        padding: 30px;
-    
-        .container__portofolio__hero {
-    
-            .container__content1 {
-    
-                .btn__content1 {
-                    text-align: left;
-                    width: 100%;
-                    box-sizing: border-box;
-    
-    
-    
-                    .btn__content1__hero {
-                        display: flex;
-    
-    
-                        a {
-                            margin-right: 20px;
-                            text-decoration: none;
-                            color: black;
-                            border-radius: 5px;
-                            display: flex;
-                            justify-content: left;
-                            align-items: center;
-                            width: 12%;
-                            
-    
-    
-                            &:hover {
-                                color: purple;
-                                transition: all 0.2s ease-out 0s;
-                                cursor: pointer;
-                            }
-                        }
-    
-                        svg {
-                            width: 16%;
-                            margin-right: 10px;
-                            min-width: 15%;
-                           
-                            color: black;
-                            
-                        }
-    
-                        #github {
-                            width: 16%;
-    
-                        }
-                    }
-                }
-    
-    
-            }
-        }
-    
-    }
-   
-}
-
-
-@media only screen and (min-width: 992px) {
-    
-    .container__portofolio {
-        height: 330vh;
-        
-    }
-   
-}
-
-@media only screen and (min-width: 1024px) {
-    
-    .container__portofolio {
-        height: 330vh;
-
-        .container__portofolio__hero{
-
-            .container__content1{
-
-                .btn__content1{
-
-                    .btn__content1__hero {
-
-                        a {
-                            width: 20%;
-                        }
-
-                    }
-                }
-            }
-        }
-        
-    }
-   
-}
-
-@media only screen and (min-width: 1200px) {
-    
-    .container__portofolio {
-        height: 360vh;
-        
-    }
-   
-}
-
-@media only screen and (min-width: 1300px) {
-    
-    .container__portofolio {
-        height: 400vh;
-        
-    }
-   
-}
-
-@media only screen and (min-width: 1440px) {
-    
-    .container__portofolio {
-        height: 365vh;
-        
-    }
-}
+  }

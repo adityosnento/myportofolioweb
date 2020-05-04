@@ -1,84 +1,166 @@
 .hireme__container {
-    padding: 40px 80px;
-    height: 60vh;
-    background-color: #fed135;
-    
-    .hireme__container__hero{
+  padding: 40px 80px;
+  height: 60vh;
+  background-color: #fed135;
 
-        .hireme__title{
-            
-            h1{
-                text-align: center;
-                text-transform: uppercase;
-            }
+  .hireme__container__hero {
+    .hireme__title {
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    .hireme__content__hero {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 0px;
+
+      .hireme__content {
+        padding: 0px 30px;
+
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
         }
 
-        .hireme__content__hero{
-           display: flex;
-           justify-content: center;
-           text-align: center;
-           padding: 30px 0px;
-           
+        .hireme__description {
+          h5 {
+            font-size: 16px;
+          }
 
-            .hireme__content{
-            padding: 0px 30px;
-            
-                img {
-                    width:150px;
-                    height: 150px;
-                    border-radius: 50%;
-                }
-
-                .hireme__description {
-                    
-                    h5{
-                        font-size: 16px;
-                    }
-
-                    p{
-                        font-size: 14px;
-                        line-height: 25px;
-                    }
-                }
-
-            }
-        }
-
-        
-    }
-}
-
-@media only screen and (min-width: 1300px) {
-    
-    .hireme__container {
-      height: 70vh;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    
-    .hireme__container {
-      height: 70vh;
-      padding: 40px 50px;
-
-      .hireme__container__hero {
-
-        .hireme__content__hero {
-
-            .hireme__content {
-
-                .hireme__description {
-                    font-size: 12px;
-                }
-            }
+          p {
+            font-size: 14px;
+            line-height: 25px;
+          }
         }
       }
     }
+  }
 }
 
-@media only screen and (min-width: 768px) {
-    
-    .hireme__container {
-      height: 80vh;
-    }
+@media only screen and (max-width: 1366px) {
+  .hireme__container {
+    padding: 40px 60px;
+    height: 70vh;
+  }
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .hireme__container {
+    padding: 40px 60px;
+    height: 80vh;
+
+    .hireme__container__hero {
+    
+      .hireme__content__hero {
+        .hireme__content {
+          padding: 0px 20px;
+
+          .hireme__description {
+            h5 {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 12px;
+              line-height: 20px;
+              font-weight: 550;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .hireme__container {
+      padding: 40px 20px;
+      height: 75vh;
+  
+      .hireme__container__hero {
+
+        .hireme__title {
+            h1 {
+              font-size: 28px;
+            }
+          }
+        .hireme__content__hero {
+          .hireme__content {
+            padding: 0px 20px;
+
+            img {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+              }
+  
+            .hireme__description {
+              h5 {
+                font-size: 16px;
+              }
+  
+              p {
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 550;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .hireme__container {
+      padding: 20px 20px;
+      height: 190vh;
+      background-color: #fed135;
+    
+      .hireme__container__hero {
+        .hireme__title {
+          h1 {
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+    
+        .hireme__content__hero {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          padding: 10px 0px;
+          flex-direction: column;
+    
+          .hireme__content {
+            padding: 0px 5px;
+    
+            img {
+              width: 180px;
+              height: 180px;
+              border-radius: 50%;
+            }
+    
+            .hireme__description {
+              padding-bottom: 30px;
+              h5 {
+                font-size: 24px;
+                margin: 10px 0px;
+              }
+    
+              p {
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

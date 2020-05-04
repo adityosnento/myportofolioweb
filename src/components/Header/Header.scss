@@ -139,20 +139,28 @@
  
      .container__nav__right {
          .container__navigasi {
-            //  position:absolute;
-            //  right: 0;
-            //  flex-direction: column;
-            //  height: 20vh;
-            //  width: 100vw;
-            //  top: 0;
-            //  align-items: center;
-            //  justify-content: space-evenly;
-            //  background-color: red;
             display: none;
          }
 
          .menu__toggle {
             display: flex;
+        }
+     }
+    }
+ }
+
+ @media screen and (max-width: 375px) {
+    
+    .container__nav {
+ 
+     .container__nav__right {
+         .container__navigasi {
+            display: none;
+         }
+
+         .menu__toggle {
+            display: flex;
+            z-index: 2;
         }
      }
     }
