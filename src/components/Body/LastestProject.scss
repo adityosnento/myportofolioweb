@@ -1,6 +1,6 @@
 .container__project {
     padding: 50px 0px;
-    height: 130vh;
+    height: 160vh;
     width: 100%;
     box-sizing: border-box;
     background-color: #F8F8F8;
@@ -14,14 +14,14 @@
         }
     }
 
-    .project__url {
+    .wrapper {
         text-align: center;
-        display: inline-flex;
-        justify-content: center;
-        padding: 0px 20px;
+        box-sizing: border-box;
+        padding: 0px 90px;
+        height: 90vh;
 
-        .video{
-           
+        .react-player {
+            height: 40vh;
         }
     }
 }
@@ -29,7 +29,7 @@
 @media only screen and (max-width: 1440px) {
     
     .container__project {
-       height: 90vh   
+       height: 140vh   
     }
    
 }
@@ -37,7 +37,29 @@
 @media only screen and (max-width: 1024px) {
     
     .container__project {
-       height: 120vh   
+       height: 120vh;  
+       
+       .container__project__hero {
+        text-align: center;
+
+
+        .project__title {
+            padding-bottom: 50px;
+
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        .wrapper {
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0px 50px;
+            height: 70vh;
+    
+        }
+    }
     }
    
 }
@@ -46,7 +68,7 @@
     
     .container__project {
         padding: 50px 0px;
-        height: 115vh;
+        height: 105vh;
 
     
         .container__project__hero {
@@ -62,18 +84,33 @@
                 }
             }
 
-            .project__url{
-                position: relative;
-                padding-top: 1.25%;
-
-                .react-player {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    width: 300%;
-                  }
+            .wrapper {
+                text-align: center;
+                box-sizing: border-box;
+                padding: 0px 30px;
+                height: 60vh;
+        
             }
         }
     }
    
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .container__project {
+       height: 80vh;
+       
+       .container__project__hero {
+        text-align: center;
+
+       .wrapper {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0px 30px;
+        height: 35vh;
+
+      }
+    }
+}
 }

@@ -11,8 +11,8 @@ class LastestProject extends Component {
           <div className="project__title">
             <h1>MY LASTEST PROJECT</h1>
           </div>
-          <div >
-            <ReactPlayer url="https://www.youtube.com/watch?v=QGMi1DgFd_A" width="100%" height="100%" style={{padding:"0px 10px", position: "relative"}}  />
+          <div className="wrapper">
+            <ReactPlayer className='react-player' url="https://www.youtube.com/watch?v=QGMi1DgFd_A" width='100%' height='100%'/>
           </div>
           </div>
         </div>
