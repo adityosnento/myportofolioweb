@@ -96,6 +96,25 @@
    
 }
 
+@media only screen and (max-width: 480px) {
+    
+    .container__project {
+       height: 80vh;
+       
+       .container__project__hero {
+        text-align: center;
+
+       .wrapper {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0px 30px;
+        height: 35vh;
+
+      }
+    }
+}
+}
+
 @media only screen and (max-width: 375px) {
     
     .container__project {

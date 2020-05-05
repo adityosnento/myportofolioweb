@@ -116,6 +116,96 @@
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    .hireme__container {
+      padding: 40px 10px;
+      height: 77vh;
+  
+      .hireme__container__hero {
+
+        .hireme__title {
+            h1 {
+              font-size: 28px;
+            }
+          }
+        .hireme__content__hero {
+          .hireme__content {
+            padding: 0px 20px;
+
+            img {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+              }
+  
+            .hireme__description {
+              padding: 0px 5px;
+              h5 {
+                font-size: 14px;
+              }
+  
+              p {
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 550;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .hireme__container {
+      padding: 20px 20px;
+      height: 215vh;
+      background-color: #fed135;
+    
+      .hireme__container__hero {
+        .hireme__title {
+          h1 {
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+    
+        .hireme__content__hero {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          padding: 10px 0px;
+          flex-direction: column;
+    
+          .hireme__content {
+            padding: 0px 5px;
+    
+            img {
+              width: 180px;
+              height: 180px;
+              border-radius: 50%;
+            }
+    
+            .hireme__description {
+              padding-bottom: 30px;
+              h5 {
+                font-size: 24px;
+                margin: 10px 0px;
+              }
+    
+              p {
+                font-size: 15px;
+                line-height: 30px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   @media only screen and (max-width: 375px) {
     .hireme__container {
       padding: 20px 20px;

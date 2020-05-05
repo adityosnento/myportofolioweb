@@ -129,6 +129,107 @@
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    .container__portofolio {
+      margin: 0px 10px;
+      height: 270vh;
+      padding: 10px;
+    
+      .container__portofolio__hero {
+        .container__content1 {
+          margin-bottom: 30px;
+    
+          img {
+            border-radius: 5px;
+          }
+    
+          .btn__content1 {
+            .btn__content1__hero {
+    
+              a {
+                margin-right: 20px;
+                text-decoration: none;
+                color: black;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+    
+                &:hover {
+                  color: purple;
+                  transition: all 0.2s ease-out 0s;
+                  cursor: pointer;
+                }
+              }
+    
+              svg {
+                margin-right: 10px;
+                width: 14%;
+                color: black;
+              }
+    
+              #github {
+                width: 14%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .container__portofolio {
+      margin: 0px 10px;
+      height: 225vh;
+      padding: 10px;
+    
+      .container__portofolio__hero {
+        .container__content1 {
+          margin-bottom: 30px;
+    
+          img {
+            border-radius: 5px;
+          }
+    
+          .btn__content1 {
+            .btn__content1__hero {
+    
+              a {
+                margin-right: 20px;
+                text-decoration: none;
+                color: black;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+    
+                &:hover {
+                  color: purple;
+                  transition: all 0.2s ease-out 0s;
+                  cursor: pointer;
+                }
+              }
+    
+              svg {
+                margin-right: 10px;
+                width: 14%;
+                color: black;
+              }
+    
+              #github {
+                width: 14%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   @media only screen and (max-width: 375px) {
     .container__portofolio {
       margin: 0px 5px;
